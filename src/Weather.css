@@ -1,3 +1,53 @@
+.Weather .card {
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  max-width: 550px;
+  margin: 20px auto;
+  display: block;
+  color: #343a40;
+}
+
+.searchBar {
+  margin: 0 15px 10px 15px;
+  /* margin-bottom: 10px; */
+  width: 74%;
+}
+
+.Weather .weatherIcon {
+  font-size: 40px;
+}
+
+.Weather .currentTemp {
+  font-size: 50px;
+  display: inline;
+  margin-left: 15px;
+}
+
+.Weather .locationStats {
+  padding: 0;
+}
+
+.Weather .tempButton {
+  vertical-align: 100%;
+  padding: 10px 5px 10px 12px;
+}
+
+ul {
+  list-style-type: none;
+}
+
 img {
   max-width: 100px;
+}
+
+button {
+  padding: 0 3px;
+}
+
+.Weather .rainWind {
+  padding: 0;
+  margin-top: 14px;
+}
+
+.Weather .credit {
+  text-align: center;
 }
