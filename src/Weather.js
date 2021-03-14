@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import WeatherIcon from 'react-icons-weather';
+import Loader from "react-loader-spinner";
 import "./Weather.css";
 
 export default function Weather() {
@@ -72,6 +73,8 @@ export default function Weather() {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
         axios.get(url).then(handleResponse);
 
-        return "Loading...";
+        return (
+            <Loader type="TailSpin" color="#e3eeff" className="loader"/>
+        )
     }
 }
