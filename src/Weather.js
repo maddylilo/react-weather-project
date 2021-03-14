@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import WeatherIcon from 'react-icons-weather';
 import Loader from "react-loader-spinner";
 import "./Weather.css";
@@ -11,7 +12,7 @@ export default function Weather() {
         console.log(response.data);
         setWeather({
             city: response.data.name,
-            date: "Wednesday 10:00",
+            date: new Date(response.data.dt * 1000),
             description: response.data.weather[0].description,
             temperature: response.data.main.temp,
             humidity: response.data.main.humidity,
@@ -41,7 +42,9 @@ export default function Weather() {
                                 <li>Wednesday 10:00</li>
                                 <li>Sunny</li>
                             </ul> */}
-                            <span>{weather.date}</span>
+                            <span>
+                                <FormattedDate date={weather.date} />
+                            </span>
                             <span> / </span>
                             <span className="text-capitalize">{weather.description}</span>
                             <div className="row">
