@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import WeatherDisplay from "./WeatherDisplay";
+import Forecast from "./Forecast";
 import Loader from "react-loader-spinner";
 import "./Weather.css";
 
@@ -56,6 +57,7 @@ export default function Weather(props) {
                             </form>
                             <WeatherDisplay data={weather}/>
                         </div>
+                        <Forecast city={weather.city}/>
                     </div>
                     <p className="credit"><a href="https://github.com/maddylilo/react-weather-project" target="_blank" rel="noreferrer">Open-source code</a> by Madeleine Boyd</p>
                 </div>
