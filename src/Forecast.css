@@ -5,3 +5,7 @@
 .Forecast .weatherIcon {
     display: block;
 }
+
+.forecastTemperature {
+    padding-top: 30px;
+}

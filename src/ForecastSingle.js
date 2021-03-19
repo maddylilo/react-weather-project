@@ -12,7 +12,7 @@ export default function ForecastSingle(props) {
          <div className="ForecastSingle col">
             {hours()}
             <CurrentIcon code={props.data.weather[0].icon} />
-            {Math.round(props.data.main.temp)}°C
+            <p className="forecastTemperature">{Math.round(props.data.main.temp)}°C</p>
         </div>
     )
 }

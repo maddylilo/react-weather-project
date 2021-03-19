@@ -57,6 +57,7 @@ export default function Weather(props) {
                             </form>
                             <WeatherDisplay data={weather}/>
                         </div>
+                        <hr />
                         <Forecast city={weather.city}/>
                     </div>
                     <p className="credit"><a href="https://github.com/maddylilo/react-weather-project" target="_blank" rel="noreferrer">Open-source code</a> by Madeleine Boyd</p>
