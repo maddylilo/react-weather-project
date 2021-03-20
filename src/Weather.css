@@ -1,6 +1,6 @@
 .Weather .card {
   background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-  max-width: 550px;
+  max-width: 600px;
   margin: 20px auto;
   display: block;
   color: #343a40;
