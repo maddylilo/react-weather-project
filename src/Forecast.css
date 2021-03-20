@@ -1,11 +1,12 @@
 .Forecast {
-    text-align: center;
+  text-align: center;
 }
 
 .Forecast .weatherIcon {
-    display: block;
+  display: block;
 }
 
 .forecastTemperature {
-    padding-top: 30px;
+  padding-top: 30px;
+  font-size: 15px;
 }

@@ -10,11 +10,9 @@ export default function ForecastSingle(props) {
 
     return (
          <div className="ForecastSingle col">
-            {hours()}
+            <strong>{hours()}</strong>
             <CurrentIcon code={props.data.weather[0].icon} />
             <p className="forecastTemperature">{Math.round(props.data.main.temp)}°C / {Math.round((props.data.main.temp * 9)/5 + 32)}°F</p>
         </div>
     )
 }
-
-// {Math.round((props.data.main.temp * 9)/5 + 32)}
